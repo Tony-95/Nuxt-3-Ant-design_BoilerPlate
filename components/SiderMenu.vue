@@ -1,11 +1,10 @@
 <template>
-<a-layout-sider>
   <a-layout-sider v-model:collapsed="collapsed" collapsible>
         <div class="logo" >
-			<a href="/">
-			<img src="assets/apprentics_logo.jpeg" alt="" />
-			</a>
-		</div>
+		<a href="/">
+		     <img src="assets/apprentics_logo.jpeg" alt="" />
+		</a>
+	</div>
         <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
           <a-menu-item key="1">
             <pie-chart-outlined />
@@ -41,8 +40,7 @@
             <span>File</span>
           </a-menu-item>
         </a-menu>
-      </a-layout-sider>
-	</a-layout-sider>
+   </a-layout-sider>
 </template>
 
 <script lang="ts" setup>
@@ -71,7 +69,3 @@
     background: #141414;
   }
   </style>
-
-<style scoped>
-/* Ajoutez des styles spécifiques au menu latéral ici si nécessaire */
-</style>
